@@ -1,0 +1,45 @@
+backend:
+  name: github
+  repo: mzeekelly4024-web/ateliar
+  branch: main
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "src/content/blogs"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+
+      - label: "Description"
+        name: "description"
+        widget: "text"
+
+      - label: "Publish Date"
+        name: "pubDate"
+        widget: "datetime"
+        format: "YYYY-MM-DD"
+
+      - label: "Updated Date"
+        name: "updatedDate"
+        widget: "datetime"
+        format: "YYYY-MM-DD"
+        required: false
+
+      - label: "Hero Image"
+        name: "heroImage"
+        widget: "image"
+        required: false
+
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
