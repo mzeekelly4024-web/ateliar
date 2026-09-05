@@ -68,7 +68,7 @@ export type SiteConfig = {
 };
 
 const siteConfig: SiteConfig = {
-    website: 'https://example.com',
+    website: 'https://mzeekelly4024-web.github.io/ateliar/',
 
     title: 'Ateliar',
 
