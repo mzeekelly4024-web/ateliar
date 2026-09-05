@@ -30,8 +30,11 @@
 /* 1. html elements */
 html,
 body {
-  @apply mx-0 my-auto min-h-screen p-0 text-base;
-  overscroll-behavior: none;
+  @apply mx-0 min-h-screen p-0 text-base;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 html.dark body {
@@ -231,11 +234,4 @@ html.dark a:not(.button-link):hover {
   .article-content {
     font-size: 1.075rem;
   }
-}
-
-html,
-body {
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
 }
