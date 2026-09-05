@@ -232,3 +232,10 @@ html.dark a:not(.button-link):hover {
     font-size: 1.075rem;
   }
 }
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
