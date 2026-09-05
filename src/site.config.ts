@@ -189,7 +189,7 @@ subscribe: {
 
     text: 'Get new DIY projects, useful tech, creative ideas and more delivered to your inbox.',
 
-    formUrl: '#'
+    formUrl: 'https://b361ac20.sibforms.com/serve/MUIFAM_yq8t6yZDyBxRfRyKKjFsUzBmVq7aR594O6wbgMEvKvTs8nkirIv2z3qnprN59nk7f8P-DOuAjapiWszTSFRSRYGPkftQwetvPowAZtEO_W1D3kU3MtOJN7C55CgubffXGFiDoewRP-BNRiWCMC5jaZKrXE5WROfz4Z7w50fLRYqyZ4O1R73U7zwM608AlVKKqjg4wMsdu',
 },
 
 blog: {
