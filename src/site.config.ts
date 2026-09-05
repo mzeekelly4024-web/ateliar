@@ -121,19 +121,15 @@ const siteConfig: SiteConfig = {
     ],
 
     socialLinks: [
-        {
-            text: 'Instagram',
-            href: 'https://instagram.com/'
-        },
-        {
-            text: 'Pinterest',
-            href: 'https://www.pinterest.com/'
-        },
-        {
-            text: 'X/Twitter',
-            href: 'https://twitter.com/'
-        }
-    ],
+    {
+        text: 'Instagram',
+        href: 'https://www.instagram.com/hollowpiticus/'
+    },
+    {
+        text: 'Pinterest',
+        href: 'https://www.pinterest.com/mzeekelly4024/'
+    }
+],
 
     hero: {
         eyebrowText: 'Ideas. Projects. Inspiration.',
@@ -160,53 +156,49 @@ const siteConfig: SiteConfig = {
     },
 
     about: {
-        title: 'About Ateliar',
+    title: 'About Ateliar',
 
-        text: 'Ateliar is a place for curious people who enjoy making, building and exploring. From DIY and home projects to technology, gadgets, crafts and gaming, Ateliar brings together practical ideas, creative inspiration and interesting things worth trying.'
+    text: 'Ateliar is a place for curious people who enjoy making, building and exploring. From DIY and home projects to technology, gadgets, crafts and gaming, Ateliar brings together practical ideas, creative inspiration and interesting things worth trying.'
+},
+
+contactInfo: {
+    title: 'Contact',
+
+    text: "Have a question, suggestion, collaboration idea, or just want to say hello? I'd love to hear from you.",
+
+    email: {
+        text: 'Send me an email and I’ll get back to you as soon as I can.',
+        href: 'mailto:qqq4024@outlook.com',
+        email: 'qqq4024@outlook.com'
     },
 
-    contactInfo: {
-        title: 'Contact',
-
-        text: "Have a question, suggestion, collaboration idea, or just want to say hello? I'd love to hear from you.",
-
-        email: {
-            text: 'Send me an email and I’ll get back to you as soon as I can.',
-            href: 'mailto:example@example.com',
-            email: 'example@example.com'
+    socialProfiles: [
+        {
+            text: 'Instagram',
+            href: 'https://www.instagram.com/hollowpiticus/'
         },
+        {
+            text: 'Pinterest',
+            href: 'https://www.pinterest.com/mzeekelly4024/'
+        }
+    ]
+},
 
-        socialProfiles: [
-            {
-                text: 'Instagram',
-                href: 'https://www.instagram.com/'
-            },
-            {
-                text: 'Pinterest',
-                href: 'https://www.pinterest.com/'
-            },
-            {
-                text: 'GitHub',
-                href: 'https://github.com/'
-            }
-        ]
-    },
+subscribe: {
+    title: 'Subscribe to Ateliar',
 
-    subscribe: {
-        title: 'Subscribe to Ateliar',
+    text: 'Get new DIY projects, useful tech, creative ideas and more delivered to your inbox.',
 
-        text: 'Get new DIY projects, useful tech, creative ideas and more delivered to your inbox.',
+    formUrl: '#'
+},
 
-        formUrl: '#'
-    },
+blog: {
+    description: 'Explore DIY projects, home ideas, technology, gadgets, crafts and gaming.'
+},
 
-    blog: {
-        description: 'Explore DIY projects, home ideas, technology, gadgets, crafts and gaming.'
-    },
+postsPerPage: 6,
 
-    postsPerPage: 6,
-
-    recentPostLimit: 3
+recentPostLimit: 3
 };
 
 export default siteConfig;

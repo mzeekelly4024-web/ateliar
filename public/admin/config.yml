@@ -42,4 +42,7 @@ collections:
 
       - label: "Body"
         name: "body"
-        widget: "markdown"
+        widget: "richtext"
+        editor_components:
+          - image
+          - code-block
