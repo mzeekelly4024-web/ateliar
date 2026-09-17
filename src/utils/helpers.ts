@@ -7,10 +7,10 @@ export function sortItemsByDateDesc(itemA: CollectionEntry<'blogs'>, itemB: Coll
 export function createSlugFromTitle(title: string): string {
     return title
         .toLowerCase()
-        .replace(/[^a-z0-9\s-]/g, '') // Remove special characters
+        .replace(/[^a-z0-9\s-]/g, '')
         .trim()
-        .replace(/\s+/g, '-') // Replace spaces with hyphens
-        .replace(/-+/g, '-'); // Replace multiple hyphens with a single hyphen
+        .replace(/\s+/g, '-')
+        .replace(/-+/g, '-');
 }
 
 export function getAllTags(posts: CollectionEntry<'blogs'>[]) {
@@ -28,8 +28,18 @@ export function getAllTags(posts: CollectionEntry<'blogs'>[]) {
 }
 
 export function getPostsByTag(posts: CollectionEntry<'blogs'>[], tagId: string) {
-    const filteredPosts: CollectionEntry<'blogs'>[] = posts.filter((post) => (post.data.tags || []).map((tag) => createSlugFromTitle(tag)).includes(tagId));
+    const filteredPosts: CollectionEntry<'blogs'>[] = posts.filter((post) =>
+        (post.data.tags || [])
+            .map((tag) => createSlugFromTitle(tag))
+            .includes(tagId)
+    );
     return filteredPosts;
 }
 
-export const withBase = (path: string) => `${import.meta.env.BASE_URL}${path}`;
+export const withBase = (path: string) => {
+    const base = import.meta.env.BASE_URL || "/";
+    const cleanBase = base === "/" ? "" : base.replace(/\/$/, "");
+    const cleanPath = path.replace(/^\//, "");
+
+    return `${cleanBase}/${cleanPath}`.replace(/\/+$/, "") || "/";
+};
