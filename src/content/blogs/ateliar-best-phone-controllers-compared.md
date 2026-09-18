@@ -14,7 +14,7 @@ If you already own a console controller (Xbox or PlayStation), a simple snap-on 
 
 ## Best Value: 8BitDo Controller
 
-![](/uploads/51nohzpipyl._sl1500_.avif)
+![](/uploads/61-mehp2wwl.jpg)
 
 The **8BitDo phone controller** is a standout for the price. It feels like an Xbox controller with a built-in phone slot, and it's noticeably solid in the hand. Notable features:
 
